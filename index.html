@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2026 New Year Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="scene-1" class="scene active dark-mode">
+        <canvas id="star-canvas"></canvas>
+        <canvas id="firework-canvas"></canvas>
+        <div class="content-center hidden-content" id="intro-content">
+            <div class="intro-sub">H A P P Y   N E W   Y E A R !</div>
+            <h1 class="year-title">2026</h1>
+            <div class="cat-box">
+                <img src="pop_cat.gif" alt="Pop Cat">
+            </div>
+            <p class="italic-msg">See what I made for you</p>
+            <div class="btn-container">
+                <span class="sparkle">✦</span>
+                <button class="text-btn" onclick="goToScene(2)">STARTING THE JOURNEY</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="scene-2" class="scene red-mode">
+        <img src="santa_top_left.png" class="corner-decoration top-left-cat">
+        <div class="red-card">
+            <h2 class="greeting-title">HAPPY NEW YEAR TO YOU! 💖</h2>
+            <p class="greeting-subtitle">Thanks for being part of my 2025, now let's make 2026 even better!</p>
+            <div class="bbq-wrapper">
+                <div class="bbq-icon">🍢🔥</div>
+                <img src="strawberry_jump.gif" class="bbq-cat-small">
+            </div>
+            <p class="continue-msg">Continue to see more surprises!</p>
+            <button class="red-next-btn" onclick="goToScene(3)">CONTINUE ➔</button>
+        </div>
+        <div class="made-with-care">MADE WITH CARE ❤️ GREETINGS</div>
+    </section>
+
+    <section id="scene-3" class="scene light-mode">
+        <div class="bucket-container">
+            <h2 class="bucket-title">Goals for 2026</h2>
+            <h3 class="bucket-subtitle">Bucket List</h3>
+            <div class="check-list">
+                <div class="check-item"><span class="box checked"></span> 🌍 Start a beautiful new chapter filled with happiness</div>
+                <div class="check-item"><span class="box"></span> 📚 Stay focused on your goals; everything will be fine</div>
+                <div class="check-item"><span class="box"></span> 🧘‍♀️ Take better care of your mind and body</div>
+                <div class="check-item"><span class="box"></span> ❤️ Spend quality time with people who matter</div>
+            </div>
+            <p class="ready-text">Ready to step into 2026?</p>
+            <button class="go-btn" onclick="goToScene(4)">LET'S GO! ➔</button>
+        </div>
+    </section>
+
+    <section id="scene-5" class="scene light-mode scrollable">
+        <div class="music-header">
+            <p class="vibe-text">simple, honest & heartfelt</p>
+            <h2 class="vibe-title">A Few Things I Want To Say ✨</h2>
+            <p class="tap-flip">Tap to flip 🖊</p>
+        </div>
+
+        <div class="sticky-note-wrapper" onclick="this.classList.toggle('is-flipped')">
+            <div class="note-inner">
+                <div class="note-front note-pink">
+                    <div class="tape-top"></div>
+                    <p class="note-text">You make moments feel lighter 🤍</p>
+                </div>
+                <div class="note-back">
+                    <img src="flip1.jpg">
+                    <p class="back-caption">Always grateful for you.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sticky-note-wrapper" onclick="this.classList.toggle('is-flipped')">
+            <div class="note-inner">
+                <div class="note-front note-yellow">
+                    <div class="tape-top"></div>
+                    <p class="note-text">You are appreciated more than you know 🙂</p>
+                </div>
+                <div class="note-back">
+                    <img src="flip3.jpg">
+                    <p class="back-caption">Wishing you the best ✨</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="pink-next-btn" onclick="goToScene(6)">Next ➔</button>
+        <div class="spacer"></div>
+    </section>
+
+    <section id="scene-8" class="scene light-mode">
+        <div class="letter-box">
+            <div class="letter-top">
+                <img src="final_cat_blend.png" class="blend-header">
+            </div>
+            <div class="letter-content">
+                <p class="hey-anu">Hey there,</p>
+                <h2 class="note-title">One Last Note</h2>
+                <p class="main-para">As the new year begins, I hope 2026 becomes the best year of your life. May it bring you peace, growth, and endless smiles.</p>
+                <button class="seal-btn" onclick="goToScene(9)">SEAL IT ✉ 🔒</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="scene-9" class="scene light-mode">
+        <div class="content-center">
+            <h2 class="sealed-header">Sealed ✉</h2>
+            <div class="typewriter-box">
+                <p id="type-text"></p>
+            </div>
+            <button class="restart-btn" id="restart" onclick="location.reload()">RESTART THE JOURNEY</button>
+        </div>
+    </section>
+
+    <audio id="global-audio"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
