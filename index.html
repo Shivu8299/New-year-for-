@@ -46,10 +46,10 @@
             <h2 class="bucket-title">Goals for 2026</h2>
             <h3 class="bucket-subtitle">Bucket List</h3>
             <div class="check-list">
-                <div class="check-item"><span class="box checked"></span> 🌍 Start a beautiful new chapter filled with happiness</div>
-                <div class="check-item"><span class="box"></span> 📚 Stay focused on your goals; everything will be fine</div>
+                <div class="check-item"><span class="box checked"></span> 🌍 your new chapter i hope ki tum khush rahogi</div>
+                <div class="check-item"><span class="box"></span> 📚 Friend, don't worry, concentrate on your studies...</div>
                 <div class="check-item"><span class="box"></span> 🧘‍♀️ Take better care of your mind and body</div>
-                <div class="check-item"><span class="box"></span> ❤️ Spend quality time with people who matter</div>
+                <div class="check-item"><span class="box"></span> ❤️ Wishing you the best year ahead</div>
             </div>
             <p class="ready-text">Ready to step into 2026?</p>
             <button class="go-btn" onclick="goToScene(4)">LET'S GO! ➔</button>
@@ -64,10 +64,28 @@
 
         <div class="cassette-container" onclick="toggleMusic('high_on_you.mp3', this)">
             <div class="cassette-label">
+                <img src="song1.jpg" class="album-art">
                 <div class="song-meta">
-                    <p class="tape-title">Vibes 01</p>
+                    <p class="tape-title">High On You</p>
                     <p class="tape-sub">GOOD VIBES ONLY</p>
                 </div>
+                <div class="side-a">SIDE A</div>
+            </div>
+            <div class="tape-mechanism">
+                <div class="wheel left-wheel"><div class="plus-mark">+</div></div>
+                <div class="wave-container"><canvas class="wave-canvas"></canvas></div>
+                <div class="wheel right-wheel"><div class="plus-mark">+</div></div>
+            </div>
+        </div>
+
+        <div class="cassette-container" onclick="toggleMusic('for_a_reason.mp3', this)">
+            <div class="cassette-label">
+                <img src="song2.jpg" class="album-art">
+                <div class="song-meta">
+                    <p class="tape-title">For a Reason</p>
+                    <p class="tape-sub">MOMENTS FEEL RIGHT</p>
+                </div>
+                <div class="side-a">SIDE A</div>
             </div>
             <div class="tape-mechanism">
                 <div class="wheel left-wheel"><div class="plus-mark">+</div></div>
@@ -77,6 +95,7 @@
         </div>
 
         <button class="floating-next" onclick="goToScene(5)">NEXT ➔</button>
+        <div class="spacer"></div>
     </section>
 
     <section id="scene-5" class="scene light-mode scrollable">
@@ -85,17 +104,42 @@
             <h2 class="vibe-title">A Few Things I Want To Say ✨</h2>
             <p class="tap-flip">Tap to flip 🖊</p>
         </div>
+
         <div class="sticky-note-wrapper" onclick="this.classList.toggle('is-flipped')">
             <div class="note-inner">
-                <div class="note-front note-pink"><p class="note-text">You make moments feel lighter 🤍</p></div>
-                <div class="note-back"><p class="back-caption">Always grateful for you.</p></div>
+                <div class="note-front note-pink">
+                    <div class="tape-top"></div>
+                    <p class="note-text">You make moments feel lighter 🤍</p>
+                </div>
+                <div class="note-back">
+                    <img src="flip1.jpg">
+                    <p class="back-caption">Always grateful for you.</p>
+                </div>
             </div>
         </div>
+
+        <div class="sticky-note-wrapper" onclick="this.classList.toggle('is-flipped')">
+            <div class="note-inner">
+                <div class="note-front note-yellow">
+                    <div class="tape-top"></div>
+                    <p class="note-text">You are appreciated more than you know 🙂</p>
+                </div>
+                <div class="note-back">
+                    <img src="flip3.jpg">
+                    <p class="back-caption">Valid All Year ✨</p>
+                </div>
+            </div>
+        </div>
+
         <button class="pink-next-btn" onclick="goToScene(6)">Next ➔</button>
+        <div class="spacer"></div>
     </section>
 
     <section id="scene-6" class="scene light-mode">
         <div class="ferrero-wrapper">
+            <div class="ferrero-card">
+                <img src="ferrero_cat.png" alt="Ferrero Cat">
+            </div>
             <h2 class="ready-title">Ready for 2026?</h2>
             <p class="chapter-text">A new chapter is waiting to be written...</p>
             <button class="ignite-btn" onclick="goToScene(7)">IGNITE THE SPARK ✨</button>
@@ -113,6 +157,9 @@
 
     <section id="scene-8" class="scene light-mode">
         <div class="letter-box">
+            <div class="letter-top">
+                <img src="final_cat_blend.png" class="blend-header">
+            </div>
             <div class="letter-content">
                 <p class="hey-anu">Hey there,</p>
                 <h2 class="note-title">One Last Note</h2>
@@ -128,7 +175,7 @@
             <div class="typewriter-box">
                 <p id="type-text"></p>
             </div>
-            <button class="restart-btn" id="restart" onclick="location.reload()">RESTART</button>
+            <button class="restart-btn" id="restart" onclick="location.reload()">RESTART THE JOURNEY</button>
         </div>
     </section>
 
